@@ -1,0 +1,112 @@
+.cartao--container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 0.5em;
+    background: var(--branco);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.cartao__texto {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+}
+
+.cartao__texto-info {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.cartao__texto-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+}
+
+
+.cartao__texto-descricao {
+    font-size: 14px;
+}
+
+.cartao__icones {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.cartao__imagem {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.cartao-img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.cartao__botao {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cartao-botao {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--branco);
+    background: var(--laranja);
+    border-radius: 0.5em;
+}
+
+.cartao--container__desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao--container {
+        width: 50%;
+        margin: 2em auto;
+    }
+    .cartao--container__desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .cartao--container {
+        display: none;
+    }
+
+    .container-desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 5em 5em;
+        align-items: baseline;
+    }
+
+    .cartao--container__desktop {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 0.5em;
+        background: var(--branco);
+        margin: 0 1em;
+        padding: 1em;
+        border-radius: 0.5em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 80%;
+    }
+
+    .cartao__texto-info	{
+        font-size: 32px;
+        
+    }
+
+}

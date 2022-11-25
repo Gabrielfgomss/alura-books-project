@@ -1,0 +1,248 @@
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url("../img/Vector.png") no-repeat;
+    background-position: 1em;
+}
+
+.banner__topicos {
+    padding: 0.5em;
+}
+
+.titulo-topicos {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 1.5em;
+}
+
+.banner__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link__lista-link {
+    display: block;
+    background: var(--laranja);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1.2em;
+    margin: 0.5em;
+    color: var(--branco);
+}
+
+.banner__email {
+    text-align: initial;
+    padding: 2.5em 2em;
+    background: var(--branco);
+}
+
+.banner__email-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1em;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner__email-texto {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1em;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner__email-barra {
+        background-color: transparent;
+        border: 1px solid var(--azul-escuro);
+        border-radius: 24px;
+        padding: 1em;
+        width: 100%;
+        color: var(--azul-escuro);
+}
+
+.banner__email-barra::placeholder {
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: var(--azul-escuro);
+        background: url("../img/email.png") no-repeat;
+        background-position: 1em;
+}
+
+.rodape {
+    background: var(--branco);
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 1em;
+}
+
+.grupo-alura {
+    background: var(--branco);
+    
+}
+
+.rodape-opcoes {
+    display: none;
+}
+
+.container__img-descricao {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__img-descricao {
+        display: none;
+    }
+    
+    .banner__titulo {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    
+    .banner__pesquisa {
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 6em;
+    }
+
+    .titulo-topicos {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .link__lista-link {
+        font-size: 24px;
+    }
+
+    .banner__email {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .email__text {
+        width: 80%;
+    }
+    .banner__email-titulo {
+        font-size: 24px;
+    }
+
+    .banner__email-texto {
+        grid-column: 1;
+    }
+
+    .banner__email-barra {
+        width: 80%;
+    }
+
+    .banner__email-barra::placeholder {
+        background-position: 4em;
+    }
+
+    .grupo-alura {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: baseline;
+    }
+
+    .rodape-opcoes {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+        row-gap: 1em;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .rodape-texto-titulo {  
+        grid-column: span 2;
+        color: var(--cinza-titulo);
+        margin: 1em 0;
+    }
+
+    .rodape-texto {
+        color: var(--cinza-texto);
+        text-decoration: none;
+    }
+
+    .rodape-texto-img {
+        width: 50%;
+    }
+
+    .banner__lista {
+        margin: auto auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1727px) {
+    .banner__pesquisa {
+        width: 30%;
+    }
+
+    .container__img-descricao {
+        display: block;
+        font-size: 20px;
+    }
+
+    .banner__email {
+        text-align: end;
+    }
+
+    .banner__lista {
+        margin: auto auto;
+        width: 50%;
+    }
+
+    .banner__email-barra {
+        width: 50%;
+    }
+
+    .email__text {
+        width: 90%;
+    }
+}
